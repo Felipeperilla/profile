@@ -3,7 +3,7 @@ import ProjectSummary from './ProjectSummary'
 
 const ProjectList = () => {
   return (
-    <div className="list-group">
+    <div className="list-group mt-3">
 
       <ProjectSummary/>
       <ProjectSummary/>
