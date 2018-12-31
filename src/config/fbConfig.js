@@ -9,7 +9,7 @@ var config = {
   projectId: "portfolio-ecae0",
   storageBucket: "portfolio-ecae0.appspot.com",
   messagingSenderId: "371856536960"
-};
+}; 
 firebase.initializeApp(config);
 firebase.firestore().settings({ timestampsInSnapshots: true })
 
