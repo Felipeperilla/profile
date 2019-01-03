@@ -1,12 +1,13 @@
 import React from 'react'
+import moment from 'moment'
 
-const ProjectSummary = () => {
+const ProjectSummary = ({ project }) => {
   return (
     <div className="card text-center" >
       <div className="card-body">
-        <h5 className="card-title">Special title treatment</h5>
-        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
+        <h5 className="card-title">{project.title}</h5>
+        <p className="card-text">{project.content}</p>
+        <p className="card-text">{moment(project.createdAt.toDate()).calendar()}</p>
       </div>
     </div>
   )
